@@ -6,17 +6,17 @@ bosh:
   client_secret:
   url: https://localhost:25555
   oauth_url: https://localhost:8443
-  deployment_name: paasta-web-ide
+  deployment_name: ap-web-ide
   instance_name: eclipse-che
   
 spring:
   application:
-    name: paasta-web-ide
+    name: ap-web-ide
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mysql://PAASTA-WEBIDE-DATASOURCE/webide
-    username: PAASTA-WEBIDE-DATASOURCE-USERNAME
-    password: PAASTA-WEBIDE-DATASOURCE-PASSWORD
+    url: jdbc:mysql://AP-WEBIDE-DATASOURCE/webide
+    username: AP-WEBIDE-DATASOURCE-USERNAME
+    password: AP-WEBIDE-DATASOURCE-PASSWORD
   jpa:
     hibernate:
       ddl-auto: none
@@ -41,7 +41,7 @@ webide:
 serviceDefinition:
   id: YOUR_PLAN_ID #ex)af86588c-6212-11e7-907b-b6006ad3dp22
   name: webide
-  desc: "A paasta source control service for application development.provision parameters : parameters {owner : owner}"
+  desc: "A application Platform web-ide service for application development.provision parameters : parameters {owner : owner}"
   bindable: false
   planupdatable: false
   plan1:
